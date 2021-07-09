@@ -27,7 +27,6 @@ gem 'jbuilder', '~> 2.7'
 
 # Added gems
 # - Styling
-gem 'materialize-sass', '~> 1.0'
 gem 'material_icons' 
 
 # Reduces boot times through caching; required in config/boot.rb

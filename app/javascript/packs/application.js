@@ -7,8 +7,13 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "materialize"
+import "jquery"
+import 'materialize-css/dist/js/materialize'
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+$(document).on('turbolinks:load', function() {
+  $(".dropdown-trigger").dropdown();
+})
